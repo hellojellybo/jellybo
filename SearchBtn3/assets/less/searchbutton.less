@@ -1,0 +1,66 @@
+@import "mixins.less";
+@import "fonts.less";
+
+.jellyboSearchButton003Wrapper{
+    display: inline-block;
+    position: relative;
+    font-family: "UniformRnd-Regular";
+    .animation{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .input::-ms-clear {
+        display: none;
+    }
+    .input{
+        position: absolute;
+        background: transparent;
+        top: 0px;
+        left: 0px;
+        box-sizing: border-box;
+        padding: 10px 0px 7px 0px;
+        border: 0px;
+
+    }
+    .input:focus{
+        outline: none;
+    }
+    .placeholder(#fff);
+    .button{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+    }
+    .listWrapper{
+        position: absolute;
+        z-index: 1;
+    }
+    .list{
+        opacity: 1;
+        color: #fff;
+        margin: 0px;
+        padding: 0px;
+        background: transparent;
+        border: 0px;
+        text-align: left;
+        box-sizing: border-box;
+        .item{
+            list-style: none;
+            &.active{
+                background: rgba(255,255,255,0.25) !important;
+            }
+            &:hover{
+                background: rgba(255,255,255,0.15);
+            }
+            span{
+                width: 100%;
+                display: inline-block;
+                padding: 7px 10px 7px 10px;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

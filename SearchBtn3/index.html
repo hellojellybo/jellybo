@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SearchBtn3</title> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/searchbutton.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+
+
+        <script src="assets/lib/jquery/jquery.js" type="text/javascript"></script>
+        <script src="assets/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/lib/snap/snap.svg-min.js" type="text/javascript"></script>
+        <script src="assets/js/searchbutton.min.js" type="text/javascript"></script>
+    </head>
+    <body  style="text-align: center; margin-bottom: 200px;">
+        <div style="color: white;">
+            <p>Click on the button and start typing a city name in the search bar. E.g. lond...
+                <br>
+                <br>
+            </p>
+        </div>
+        <div>
+            <div id="searchBtn1" class="jellybo-SearchBar003" data-onChange="onChange"></div>
+        </div>
+        <div style="color: white; margin-top: 40px;">
+            <span id="selection"></span>
+        </div>
+        <div>
+            <p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a style="color: white;" href="examples.html">More examples...</a>
+                <br>
+                <a style="color: white;" href="doc">Documentation</a>
+            </p>
+        </div>
+
+        <script type="text/javascript">
+            function onChange(e, value) {
+                console.log("Change", value);
+            }
+            $(function () {
+                function onChangeFunct(e, value) {
+                    var searchBtn = $(this).jellyboSearchButton003();
+                    if (value.length >= 3) {
+                        jQuery.getJSON(
+                                "http://gd.geobytes.com/AutoCompleteCity?callback=?&limit=5&q=" + value,
+                                function (data) {
+                                    searchBtn.emptyList();
+                                    for (var i in data) {
+                                        if (data[i]) {
+                                            searchBtn.addListItem(data[i]);
+                                        }
+                                    }
+                                }
+                        );
+                    } else {
+                        searchBtn.emptyList();
+                    }
+                }
+                function onSubmitFunct(e, value) {
+                    //$(this).jellyboSearchButton003().clear();
+                    //$(this).jellyboSearchButton003().close();
+                    //$('#selection').html("You have submitted form with value: <b>" + value + "</b>");
+                    console.log("Submit", value);
+                }
+                function onItemSelectFunct(e, value) {
+                    console.log("Select", value);
+                }
+                function onItemHighlightFunct(e, value) {
+                    console.log("Highlight", value);
+                }
+                $("#searchBtn1").jellyboSearchButton003({
+                    onChange: onChangeFunct,
+                    onSubmit: onSubmitFunct,
+                    onItemSelect: onItemSelectFunct,
+                    onItemHighlight: onItemHighlightFunct
+                });
+            });
+
+        </script>
+    </body>
+</html>

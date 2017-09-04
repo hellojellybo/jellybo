@@ -1,0 +1,12 @@
+html {
+  /*
+    .cover-image('../img/bg.jpg');*/
+  background: #0076a3;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: transparent !important;
+  padding-top: 10%;
+}
+/*# sourceMappingURL=demo.css.map */
