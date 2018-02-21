@@ -1,5 +1,5 @@
 # Jellybo web animations
-Official Jellybo (jellybo.com) projects repository
+Official Jellybo ( https://jellybo.com ) projects repository
 
 Jellybo is a web animation marketplace where you can buy easy to implement animation plugins.
 We also provide some open-source projects here on github.
