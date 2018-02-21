@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Jellybo documentation : MenuIcon2 </title>
+
+        <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+              type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prettify.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <img class="logoImg" src="img/logo2.png">
+                    <h2 class="logoText lone-header">Documentation : MenuIcon2</h2>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <ul class="docs-nav">
+                        <li><strong>Getting Started</strong></li>
+                        <li><a href="#lib" class="cc-active">Integration</a></li>
+                        <li><a href="#init" class="cc-active">Initialization</a></li>
+                        <li><a href="#pass_attr" class="cc-active">Setting configuration</a></li>
+                        <li class="separator"></li>
+                        <li><strong>Configuration</strong></li>
+                        <li><a href="#attributes" class="cc-active">Attributes</a></li>
+                        <li><a href="#api" class="cc-active">Functions</a></li>
+                    </ul>
+                    <div class="docs-content">
+                        <h3> Getting Started</h3>
+                        <p>
+                           <!-- <img src="img/example1.jpg"/> --->
+                        </p>
+                        <p>
+                            MenuIcon2 - is simple jQuery plugin that provides animated menu icon. 
+                            Menu Icon can be changed to X sign when menu bar is opened.
+                            It’s well documented and 
+                            easy to integrate in your project.
+                        </p>
+                        <h3 id="lib">Integration</h3>
+                        <p>
+                            First include required libraries:
+                        </p>
+                        <table class="table">                
+                            <tr>
+                                <td>jQuery >= 1.8</td>
+                                <td>lib/jquery/jquery.js</td>
+                            </tr>
+                            <tr>
+                                <td>Snap.svg >= 0.5.1</td>
+                                <td>lib/snap/snap.svg-min.js</td>
+                            </tr>
+                            <tr>
+                                <td>JellyboBase - the latest version</td>
+                                <td>lib/jellybo/jellybo-base.min.js</td>
+                            </tr>                            
+                        </table>
+                        <p> 
+                            <i>Include all libraries only once even if you use more animations.</i>
+                            <br>
+                            Then include animation file:
+                        </p>
+                        <table class="table">                
+                            <tr>
+                                <td>js/animation.min.js</td>
+                            </tr>                                                  
+                        </table>
+                        <p>
+                            For any errors in integration check the console !
+                        </p>
+                        <h3 id="init">Initialization</h3>
+                        <p>Set class <b>jellybo-MenuIcon002</b> to the element</p>
+                        <pre class="prettyprint">&lt;div class="jellybo-MenuIcon002"&gt;&lt;/div&gt;</pre>
+                        <p>or use the jQuery plugin</p>
+                        <pre class="prettyprint">
+&lt;script&gt;
+$(document).ready(function (){
+    $('#elem').jellyboMenuIcon002();
+
+})
+&lt;/script&gt;</pre>
+
+                        <h3 id="pass_attr">Setting configuration</h3>
+                        <p>Passing as data-* attributes</p>
+                        <pre class="prettyprint">&lt;div class="jellybo-MenuIcon002" data-width="50"&gt;&lt;/div&gt;</pre>
+                        <p>or passing object to the jQuery plugin</p>
+                        <pre class="prettyprint">
+&lt;script&gt;
+$(document).ready(function (){
+    $('#elem').jellyboMenuIcon002({
+        width: 500,
+    });
+
+})
+&lt;/script&gt;</pre>
+                        <h2> Configuration</h2>
+                        <h3 id="attributes">Attributes</h3>
+                        <table class="table">
+                            <tr>
+                                <td>size</td>
+                                <td>size of the icon</td>
+                            </tr> 
+                            <tr>
+                                <td>color</td>
+                                <td>color of the icon</td>
+                            </tr> 
+                            <tr>
+                                <td>stroke</td>
+                                <td>width of the stroke</td>
+                            </tr> 
+                            <tr>
+                                <td>noAmin</td>
+                                <td>If true the icon is not automatically animated on click. 
+                                    You must use API functions to run the animation. (default: false)</td>
+                            </tr> 
+                           
+                        </table>
+                        <h3 id="api">Functions</h3>
+                        <p>Functions can be called on object returned by jQuery plugin</p>
+                        <pre class="prettyprint">
+    var value = $('#elem').jellyboMenuIcon002().open();</pre>
+                        <table class="table">
+                            <tr>
+                                <td>open()</td>
+                                <td>Change to X sign. Is called when menu bar is opening.</td>
+                            </tr>
+                            <tr>
+                                <td>close()</td>
+                                <td>Change to menu sign. Is called when menu bar is closing.</td>
+                            </tr>
+                            <tr>
+                                <td>isOpened()</td>
+                                <td>Returns true if is in opened state.</td>
+                            </tr>
+                            
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+            <section class="vibrant centered">
+                <div class="">
+                    <h4></h4>
+                </div>
+            </section>
+            <footer>
+                <div class="">
+                    <p> &copy; Copyright Jellybo. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/prettify/prettify.js"></script> 
+        <script src="js/layout.js"></script>
+    </body>
+</html>

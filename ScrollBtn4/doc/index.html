@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Jellybo documentation : Scroll Button 4 </title>
+
+        <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+              type="text/css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prettify.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <img class="logoImg" src="img/logo2.png">
+                    <h2 class="logoText lone-header">Documentation : Scroll Button 004</h2>
+                </div>
+            </header>
+            <section>
+                <div class="container">
+                    <ul class="docs-nav">
+                        <li><strong>Getting Started</strong></li>
+                        <li><a href="#lib" class="cc-active">Required libraries</a></li>
+                        <li><a href="#init" class="cc-active">Initialization</a></li>
+                        <li><a href="#pass_attr" class="cc-active">Setting configuration</a></li>
+                        <li class="separator"></li>
+                        <li><strong>Configuration</strong></li>
+                        <li><a href="#attributes" class="cc-active">Attributes</a></li>
+                    </ul>
+                    <div class="docs-content">
+                        <h2> Getting Started</h2>
+                        <p>
+                            <img src="img/example1.jpg"/>
+                        </p>
+                        <p>
+                            ScrollButton004 - is simple jQuery plugin that provides animated scroll button. Scroll button 
+                            indicates that page will continue after scrolling.
+                            It’s well documented and 
+                            easy to integrate in your project.
+                        </p>
+                        <h3 id="lib">Required libraries</h3>
+                        <table class="table"> 
+                            <tr>
+                                <td>css style</td>
+                                <td>assets/css/scrollbutton.css</td>
+                            </tr>
+                            <tr>
+                                <td>fonts</td>
+                                <td>assets/css/fonts (must be in the same folder as scrollbutton.css) </td>
+                            </tr>
+                            <tr>
+                                <td>jquery</td>
+                                <td>assets/lib/jquery/jquery.js</td>
+                            </tr>
+                            <tr>
+                                <td>snap svg</td>
+                                <td>assets/lib/snap/snap.svg-min.js</td>
+                            </tr>
+                            <tr>
+                                <td>jellybo scroll button</td>
+                                <td>assets/js/scrollbutton.js</td>
+                            </tr>
+                        </table>
+                        <h3 id="init">Initialization</h3>
+                        <p>Set class jellybo-ScrollBar004 to the element</p>
+                        <pre class="prettyprint">&lt;div class="jellybo-ScrollBar004"&gt;&lt;/div&gt;</pre>
+                        <p>or use the jQuery plugin</p>
+                        <pre class="prettyprint">
+&lt;script&gt;
+$(document).ready(function (){
+    $('#searchBtn1').jellyboScrollButton004();
+
+})
+&lt;/script&gt;</pre>
+
+                        <h3 id="pass_attr">Setting configuration</h3>
+                        <p>Passing as data-* attributes</p>
+                        <pre class="prettyprint">&lt;div class="jellybo-ScrollBar004" data-width="500"&gt;&lt;/div&gt;</pre>
+                        <p>or passing object to the jQuery plugin</p>
+                        <pre class="prettyprint">
+&lt;script&gt;
+$(document).ready(function (){
+    $('#searchBtn1').jellyboScrollButton004({
+        width: 500,
+    });
+
+})
+&lt;/script&gt;</pre>
+                        <h2> Configuration</h2>
+                        <h3 id="attributes">Attributes</h3>
+                        <table class="table">
+                            <tr>
+                                <td>width</td>
+                                <td>width of the icon</td>
+                            </tr> 
+                            <tr>
+                                <td>height</td>
+                                <td>height of the icon</td>
+                            </tr> 
+                            <tr>
+                                <td>color1</td>
+                                <td>color of moving border line and dot in the middle</td>
+                            </tr> 
+                            <tr>
+                                <td>color2</td>
+                                <td>color of static border line</td>
+                            </tr> 
+                            <tr>
+                                <td>shadow_color</td>
+                                <td>color of the shadow</td>
+                            </tr>
+                            <tr>
+                                <td>text</td>
+                                <td>the "Scroll" text</td>
+                            </tr>
+                            <tr>
+                                <td>loops</td>
+                                <td>number of loops before longer break (default: 1)</td>
+                            </tr>
+                            <tr>
+                                <td>line_stroke</td>
+                                <td>width of stroke</td>
+                            </tr>   
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+            <section class="vibrant centered">
+                <div class="">
+                    <h4></h4>
+                </div>
+            </section>
+            <footer>
+                <div class="">
+                    <p> &copy; Copyright Jellybo. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/prettify/prettify.js"></script> 
+        <script src="js/layout.js"></script>
+    </body>
+</html>

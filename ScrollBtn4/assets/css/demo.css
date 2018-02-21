@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  box-sizing: border-box;
+  padding-top: 100px;
+  height: 100%;
+  margin: 0;
+  /*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(rgb(0,118,163),rgb(0,191,243)); 
+    */
+  background: #605ca8 !important;
+}
+/*# sourceMappingURL=demo.css.map */

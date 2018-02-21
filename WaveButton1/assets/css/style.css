@@ -1,0 +1,54 @@
+.jellyboWaveBtn1-wrapper {
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  border: 1px #ccc solid;
+  box-sizing: border-box;
+}
+.jellyboWaveBtn1-wrapper svg {
+  display: block;
+  position: absolute;
+  stroke: black;
+  stroke-width: 0;
+  fill: #ccc;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  left: 1;
+}
+.jellyboWaveBtn1-wrapper *,
+.jellyboWaveBtn1-wrapper *:before,
+.jellyboWaveBtn1-wrapper *:after {
+  box-sizing: border-box;
+}
+.jellyboWaveBtn1-inner {
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.jellyboWaveBtn1-innerTable {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 50px;
+  display: table;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.jellyboWaveBtn1-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=style.css.map */
