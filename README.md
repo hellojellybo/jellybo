@@ -39,6 +39,14 @@ https://tech.jellybo.com/products/MenuIcon3/
 https://tech.jellybo.com/products/MenuIcon4/
 
 
+Scroll buttons:
+
+https://tech.jellybo.com/products/ScrollBtn4/
+
+https://tech.jellybo.com/products/ScrollBtn3/
+
+https://tech.jellybo.com/products/ScrollBtn2/
+
 # Implementation
 
 Our animations are wrapped as simple jQuery plugin. You can initialize it via JS or using special class. More about implementation you can find in documentation for each project e.g. https://tech.jellybo.com/products/MenuIcon4/doc/ 
